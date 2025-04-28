@@ -1,0 +1,11 @@
+#ext2
+x=30
+y=20
+z=x+y
+print(x,"+",y,"=",z)
+z=x-y
+print(x,"-",y,"=",z)
+z=x*y
+print(x,"*",y,"=",z)
+z=x/y
+print(x,"/",y,"=",z)
