@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas curves</title>
+</head>
+<body>
+    <canvas id="myCanvas"width="400"height="300" style="border:1px solid red ;"></canvas>
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+
+    var gradient=ctx.createLinearGradient(0,0,0,200);
+    gradient.addColorStop(0,"red");
+    gradient.addColorStop(1,"yellow");
+
+    ctx.fillStyle=gradient;
+    ctx.fillRect(50,30,200,140);
+
+
+    </script>
+    </body>
+    </html>

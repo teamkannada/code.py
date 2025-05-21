@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas"width="300"height="300" style="border:1px solid red ;"></canvas>
+<script>
+    var canvas=document.getElementById("myCanvas");
+    var ctx=canvas.getContext("2d");
+    var angle=0;
+    var img=new Image();
+    img.src="suddep.jpg";
+
+    img.onload=function(){
+        animate();
+
+    };
+    function animate(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+
+        ctx.save();
+        ctx.translate(150,150);
+        ctx.rotate(angle);
+        ctx.drawImage(img,25,25,100,100)
+        ctx.restore();
+
+        angle+=0.05;
+        requestAnimationFrame(animate);
+
+    }
+</script>
+
+</body>
+</html>

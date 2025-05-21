@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="250" style="border:10px solid black;"></canvas>
+    
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d")
+
+        ctx.translate(200,125);
+
+        ctx.rotate(45*Math.PI/180)
+
+        ctx.fillStyle="blue";
+        ctx.fillRect(-50,-30,100,60);
+
+      
+    </script>
+</body>
+</html>

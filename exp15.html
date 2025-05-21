@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas curves</title>
+</head>
+<body>
+    <canvas id="myCanvas"width="400"height="300" style="border:1px solid red ;"></canvas>
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+        
+    ctx.beginPath();
+    ctx.moveTo(50,200);
+    ctx.bezierCurveTo(150,100,250,300,350,200);
+    ctx.lineWidth=10;
+    ctx.stroke();
+
+    </script>
+    </body>
+    </html>

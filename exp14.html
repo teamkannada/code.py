@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas"width="400"height="300" style="border:1px solid red ;"></canvas>
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+        
+
+    //draw a red line
+    ctx.beginPath();
+    ctx.strokeStyle="red";
+    ctx.moveTo(50,50);
+    ctx.lineTo(200,50);
+    ctx.stroke();
+
+    //draw a yellow rectangale
+    ctx.beginPath();
+    ctx.fillStyle="yellow";
+    ctx.rect(100,100,150,80);
+    ctx.fill();
+    ctx.stroke();
+
+    </script>
+
+   
+</body>
+</html>
